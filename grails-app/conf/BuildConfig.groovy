@@ -64,7 +64,7 @@ grails.project.dependency.resolution = {
         //bootsrap
         compile ":twitter-bootstrap:3.3.1"
         //font-awesome-resources
-//        compile ":font-awesome-resources:4.2.0.0"
+        compile ":font-awesome-resources:4.2.0.0"
 
         //fields classe de Dominio
         compile ":fields:1.4"

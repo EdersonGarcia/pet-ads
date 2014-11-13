@@ -12,6 +12,7 @@ class Minicurso {
 
     static constraints = {
         dataFim nullable: true
+
     }
 
     String toString(){

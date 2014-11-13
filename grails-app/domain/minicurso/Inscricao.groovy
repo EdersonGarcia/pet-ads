@@ -4,7 +4,7 @@ import seguranca.Usuario
 
 class Inscricao {
 
-    Usuario usuario
+    String usuario
      static belongsTo = [minicurso:Minicurso]
     Date dateCreated
 
