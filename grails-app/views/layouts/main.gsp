@@ -13,12 +13,13 @@
 		<link rel="apple-touch-icon" href="${assetPath(src: 'pet-ads.png')}">
 		<link rel="apple-touch-icon" sizes="114x114" href="${assetPath(src: 'pet-ads.png')}">
   		<asset:stylesheet src="application.css"/>
-		<asset:javascript src="application.js"/>
+
 		<g:layoutHead/>
 	</head>
-	<body>
+	<body class="container">
 		<div id="grailsLogo" role="banner"><a href="http://www.ifspsaocarlos.edu.br"><asset:image src="pet-ads.png" alt="IFSP-SÃO CARLOS"/></a></div>
 		<g:layoutBody/>
+		<asset:javascript src="application.js"/>
 		<div class="footer" role="contentinfo"></div>
 		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
 	</body>
