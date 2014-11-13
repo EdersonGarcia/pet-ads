@@ -1,5 +1,7 @@
 package contato
 
+import seguranca.Usuario
+
 class Contato {
 
     String  nome
@@ -7,9 +9,10 @@ class Contato {
     String descricao
     Date dateCreated
     Date lastUpdated
-    //Usuario Usuario
+    Usuario usuario
 
     static constraints = {
+        usuario nullable: true
     }
 
     String toString(){

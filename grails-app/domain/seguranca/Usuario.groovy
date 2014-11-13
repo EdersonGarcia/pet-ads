@@ -7,15 +7,18 @@ class Usuario {
     String username
     String password
     boolean enabled = true
+    String email
     boolean accountExpired
     boolean accountLocked
     boolean passwordExpired
+    static hasMany = [permissoes: Permisao]
 
     static transients = ['springSecurityService']
 
     static constraints = {
         username blank: false, unique: true
         password blank: false
+
     }
 
     static mapping = {

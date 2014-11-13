@@ -1,15 +1,18 @@
 package agenda
 
+import grails.plugin.springsecurity.SpringSecurityService
+import seguranca.Usuario
+
 class Eventos {
 
     Date dataInicioEvento
     Date dataFimEvento
     String descricao
     String local
-    //Usuario reponsavel
+    Usuario reponsavel
     boolean exclusivo
     String linkEvento
-//    static hasMany = [convidados: Usuario]
+    static hasMany = [convidados: Usuario]
 
     static constraints = {
         dataFimEvento nullable: true
@@ -19,4 +22,5 @@ class Eventos {
     String toString(){
         return "$id - $descricao , local: $local"
     }
+
 }

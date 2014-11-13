@@ -10,7 +10,7 @@ class BootStrap {
             def adminRole = new Permisao(authority: 'ROLE_ADMIN').save(flush: true)
             def userRole = new Permisao(authority: 'ROLE_USUARIO').save(flush: true)
 
-            def testUser = new Usuario(username: 'admin', password: 'admin')
+            def testUser = new Usuario(username: 'admin', password: 'admin',email: 'admin@admin.com')
             testUser.save(flush: true)
 
             UsuarioPermisao.create testUser, adminRole, true

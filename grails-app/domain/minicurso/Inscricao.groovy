@@ -1,8 +1,10 @@
 package minicurso
 
+import seguranca.Usuario
+
 class Inscricao {
 
-//    Usuario usuario
+    Usuario usuario
      static belongsTo = [minicurso:Minicurso]
     Date dateCreated
 
