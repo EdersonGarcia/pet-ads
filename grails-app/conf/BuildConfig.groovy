@@ -61,7 +61,9 @@ grails.project.dependency.resolution = {
         compile ":scaffolding:2.1.2"
         compile ':cache:1.1.8'
         compile ":asset-pipeline:1.9.9"
+        //bootsrap
         compile ":twitter-bootstrap:3.3.1"
+
         compile ":fields:1.4"
 
         // plugins needed at runtime but not for compilation
