@@ -5,9 +5,12 @@ dataSource {
 //    username = "sa"
 //    password = ""
 
-    driverClassName = "com.mysql.jdbc.Driver"
-    dialect = org.hibernate.dialect.MySQL5InnoDBDialect
-    username = "root"
+    driverClassName = "org.postgresql.Driver"
+    dialect = org.hibernate.dialect.PostgreSQLDialect
+
+//    driverClassName = "com.mysql.jdbc.Driver"
+//    dialect = org.hibernate.dialect.MySQL5InnoDBDialect
+    username = "postgres"
     password = "12345678"
 }
 hibernate {
@@ -25,7 +28,8 @@ environments {
         dataSource {
             dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
 //            url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
-            url = "jdbc:mysql://localhost:3306/pet"
+//            url = "jdbc:mysql://localhost:3306/pet"
+            url = "jdbc:postgresql://localhost/pet"
         }
     }
     test {
