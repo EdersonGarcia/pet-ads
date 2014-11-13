@@ -41,7 +41,7 @@
 				%{--<fieldset class="form">--}%
 					%{--<g:render template="form"/>--}%
 				<fieldset>
-				<button class="btn btn-success" type="submit">${message(code: 'default.button.create.label', default: 'Create')}</button>
+				<button class="btn btn-success" type="submit"><i class="fa fa-android"> </i>${message(code: 'default.button.create.label', default: 'Create')}</button>
 				</fieldset>
 				%{--<fieldset class="btn btn-success">--}%
 					%{--<g:submitButton name="create" class="save" value="${message(code: 'default.button.create.label', default: 'Create')}" />--}%

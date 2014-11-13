@@ -10,6 +10,7 @@ class Inscricao {
 
 
     static constraints = {
+        usuario nullable: true
     }
 //    String toString(){
 //        return "$usuario - $minicurso"
