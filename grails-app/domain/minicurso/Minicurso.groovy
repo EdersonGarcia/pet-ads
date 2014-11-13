@@ -1,4 +1,4 @@
-package classes
+package minicurso
 
 class Minicurso {
     String nome
@@ -10,5 +10,9 @@ class Minicurso {
     static hasMany = [inscricoes: Inscricao]
 
     static constraints = {
+    }
+
+    String toString(){
+        return "$nome - Carga Hr:$cargaHoraria - data Inicio: $dataIncio vagas: $vagas"
     }
 }
