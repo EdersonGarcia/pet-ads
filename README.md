@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/EdersonGarcia/pet-ads.svg)](https://travis-ci.org/EdersonGarcia/pet-ads)
 pet-ads
 =======
 
