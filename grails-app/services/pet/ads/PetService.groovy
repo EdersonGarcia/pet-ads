@@ -1,6 +1,7 @@
 package pet.ads
 
 import grails.transaction.Transactional
+import minicurso.Inscricao
 import minicurso.Minicurso
 
 @Transactional
@@ -8,21 +9,12 @@ class PetService {
 
     def verificaQuantidadeVagasDisponiveis(Minicurso minicurso) {
 
-        def miniCursoCadastrados = Minicurso.createCriteria().list{
+        def  inscricoes = Inscricao.countByMinicurso(minicurso)
 
-            inscricoes {
-                eq("minicurso",minicurso)
+        def vagasDisponiveis = inscricoes - minicurso.vagas
 
+        return  vagasDisponiveis
 
-            }
-
-        }
-        if(miniCursoCadastrados.size()< minicurso.vagas){
-            println ("Existem Vagas Disponiveis")
-            return (minicurso.vagas - miniCursoCadastrados.size())
-        }else{
-          println  ("Não há vagas")
-        }
 
     }
 }
