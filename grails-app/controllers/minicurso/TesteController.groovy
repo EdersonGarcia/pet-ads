@@ -9,7 +9,7 @@ class TesteController {
 
     def index() {
         def lista = Minicurso.list()
-        def mapa
+        def mapa = []
         lista.each { valor ->
         println "percorrendo each $valor"
             if (valor != null) {

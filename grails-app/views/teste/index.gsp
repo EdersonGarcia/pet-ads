@@ -35,11 +35,13 @@
         <tbody>
         <g:each in="${listaMinicurso}">
         <tr>
-            <td>${it.nome}</td>
-            <td>${it.vagas}</td>
+            <td>${it.minicurso.nome}</td>
+            <td>${it.minicurso.vagas}</td>
             <td>
-                <g:formatDate format="dd-MM-yyyy" date="${it.dataIncio}"/>
+                <g:formatDate format="dd-MM-yyyy" date="${it.minicurso.dataIncio}"/>
+       <td> ${it.vagasDisponiveis}</td>
         </tr>
+
         </g:each>
         </tbody>
 
